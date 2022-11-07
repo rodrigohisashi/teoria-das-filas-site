@@ -2185,10 +2185,11 @@ input::-moz-focus-inner {
 }
 
 .about-me__text {
-  -webkit-columns: 2 360px;
-  -moz-columns: 2 360px;
-  columns: 2 360px;
+  -webkit-columns:1 360px;
+  -moz-columns: 1 360px;
+  columns: 1 360px;
   column-gap: 64px;
+  text-align: justify;
 }
 
 .about-me__buttons {
@@ -2767,11 +2768,15 @@ input::-moz-focus-inner {
 .item-folio__thumb {
   position: relative;
   overflow: hidden;
+  width: auto;
+  height: auto;
 }
 
 .item-folio__thumb .thumb-link {
   display: block;
   position: relative;
+  width: auto;
+    height: auto;
 }
 
 .item-folio__thumb .thumb-link::before,
