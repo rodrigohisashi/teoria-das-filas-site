@@ -121,17 +121,32 @@
                     </p>
 
                     <p>
-                        O objetivo desse trabalho é avaliar se é possível deixar mais uniforme a distribuição
-                        de funcionários para atendimento no processo de cotação de seguros da empresa de um dos integrantes
-                        do grupo, ou seja menor tempo de ociosidade dos funcionários. 
-                        Nesse caso seria deixar os casos mais complexos com os atendentes mais habilidosos e fazer com que os casos sejam resolvidos mais rápidos,
-                        avaliar o sistema e as prioridades da empresa.
+                        Numa seguradora em que um dos integrantes do grupo trabalha, na área de Responsabilidade Civil,
+                        as solicitações de cotações são divididas entre os subscritores(atendentes) através de um sistema de filas,
+                        passando parte das solicitações de cotações para os subscritores de acordo com alguns critérios. O objetivo 
+                        deste trabalho é avaliar possibilidades de melhorias na distribuição de cotações, visto a falta de uniformidade, 
+                        para diminuir o tempo de ociosidade, além da otimização da quantidade de liberações de cotações por dia, 
+                        diminuindo o tempo de espera das cotações.
 
                     </p>
 
                     <p>
-                        Restrição: Certos produtos vão somente para fila de um subescritor (atendente) e certos tipos de seguros também, divididos em tipo e produto. Ademais
-                        o tempo de espera de seguro novo, endosso 5 dias e tempo de espera de renovação 15 dias.
+                        O sistema atual conta com 6 subscritores, dividindo os subscritores em três grupos com 2 subscritores cada:
+                        especialistas, analistas de seguro novo e analistas de renovação, além disso, as cotações podem ser de três tipos:
+                        seguro novo, renovação e endosso, e há 8 produtos: RC Geral, RC Garagista, RC Operações, RC Prestação de Serviços, 
+                        RC Ambiental Transportes, RC Ambiental Locais Fixos, RC Eventos, RC Filmes. As cotações de seguro novo e endosso entram
+                        em todas as filas, já as cotações de renovação vão somente para fila dos analistas de renovação. Em relação aos produtos,
+                        RC Geral, RC operações e RC Prestação de Serviços vão para todas as filas, RC Garagista só vai para fila de um dos especialistas,
+                        RC Ambiental Transportes e Locais Fixos vão para fila de um dos especialistas ou um dos analistas de seguro novo específicos quando
+                        são seguro novo, ou para um dos analistas de renovação quando são renovação, e os RC Filmes e Eventos vão somente para um analista
+                        de seguro novo específico. Além disso, há um número médio de cotações médio a entrar por dia, assim como uma quantidade média que cada
+                        subscritor trata em média por dia. O tempo máximo que uma cotação deve ficar sem tratamento é 5 dias para seguro novo e endossos, e 15
+                        dias para renovação.
+                    </p>
+                    
+                    <p>
+                        O grupo planeja usar Teoria das Filas para fazer essa análise da fila e usar de simulações para avaliar os cenários que encontrarmos com
+                        a ferramenta, entendendo assim como a mudança na distribuição de cotações altera o comportamento das filas.
                     </p>
 
                 </div>
