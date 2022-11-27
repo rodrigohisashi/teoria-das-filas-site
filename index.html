@@ -55,7 +55,8 @@
                 <li><a class="smoothscroll" href="#about" title="about">Descrição</a></li>
                 <li><a class="smoothscroll" href="#services" title="services">Modelagem</a></li> 
                 <li><a class="smoothscroll" href="#resultados" title="services">Resultados</a></li>
-                <li><a class="smoothscroll" href="#analise" title="works">Análise</a></li> 
+                <li><a class="smoothscroll" href="#analise" title="works">Análise</a></li>                 
+                <li><a class="smoothscroll" href="#documentacao" title="works">Documentação</a></li> 
                 <li><a class="smoothscroll" href="#works" title="works">Integrantes</a></li>
                 
            <!--     <li><a class="smoothscroll" href="#contact" title="contact us">Say Hello</a></li>	-->
@@ -314,6 +315,33 @@
                     <img src="images/tabelas/media_seguros.PNG" class="img-tabela">            
                     <img src="images/tabelas/media_especialistsa.PNG"  class="img-tabela">        
                 </div>
+                <p class="leads">
+
+                    Caso real
+                </p>
+                <p>
+                    Através dos dados fornecidos pelo integrante do grupo Lucas Dantas temos que no caso real, os seguintes dados, que foram utilizados nas simulações rodadas no programa encontrado em documentação:<br><br>
+                    Fila 1 - Renovador <br> <br> 
+                    Média de chegada por unidade de tempo: 32<br>
+                    Média de atendimento por unidade de tempo: 15<br>
+                    Número de seguros no período estudado: 640<br>
+                    Número de Atendentes: 2Resultado: Tempo gasto no sistema (Ws): 0.85 <br>
+                    <br>
+                    Fila 2 - Segurador<br>
+                    Média de chegada por unidade de tempo: 53,9<br>
+                    Média de atendimento por unidade de tempo: 17<br>
+                    Número de seguros no período estudado: 1078<br>
+                    Número de Atendentes: 6<br>
+                    Resultado: Tempo gasto no sistema (Ws): 7.36<br>
+                    <br>
+                    Fila 3 - Especialista<br>
+                    Média de chegada por unidade de tempo: 55,1<br>
+                    Média de atendimento por unidade de tempo: 20<br>
+                    Número de seguros no período estudado: 1102<br>
+                    Número de Atendentes: 2<br>
+                    Resultado: Tempo gasto no sistema (Ws): 4.99<br>
+
+                </p>
             
 
             </div>
@@ -368,38 +396,121 @@
             <div class="row about-me__content" data-aos="fade-up">
                 <div class="column large-full about-me__text">
                     <p class="lead">
-                        Otimizar as filas no processo de cotação de seguros.
+                       <b> Primeira simulação: Colocar todos os atendentes para atender todos tipos de seguro</b>
                     </p>
 
                     <p>
-                        Numa seguradora em que um dos integrantes do grupo trabalha, na área de Responsabilidade Civil,
-                        as solicitações de cotações são divididas entre os subscritores(atendentes) através de um sistema de filas,
-                        passando parte das solicitações de cotações para os subscritores de acordo com alguns critérios. O objetivo 
-                        deste trabalho é avaliar possibilidades de melhorias na distribuição de cotações, visto a falta de uniformidade, 
-                        para diminuir o tempo de ociosidade, além da otimização da quantidade de liberações de cotações por dia, 
-                        diminuindo o tempo de espera das cotações.
-
+                        Nessa primeira simulação utilizada pelo grupo, foi realizada uma simulação com uma fila única com todos atendentes atendendo todos os tipos de seguros, diminuindo a média de atendimento
+                        já que os subescritores, ou seja, os atendentes possuiriam menos experiência (não são especialistas nos seguros). 
+                        Nesse teste resumidamente foram obtidos os seguintes resultados: <br>
+                        <br>
+                        <b>Caso 1 - Fila única com 6 atendentes (Diminuímos a média de atendimento, pois os subscritores terão menos experiência)     </b>      <br>
+                        Média de chegada por unidade de tempo: 141           <br>
+                        Média de atendimento por unidade de tempo: 13,33          <br>
+                        Número de seguros no período estudado: 2820          <br>
+                        Subscritores : 6           <br>
+                        <br>
+                        Resultado: Tempo gasto no sistema (Ws): 7.2782606028368715           <br>
+                        
                     </p>
+                    <p class="lead">
+                        <b> Segunda simulação: tirar um atendente de renovação e colocar em segurador novo</b>
+                     </p>
+
+                     <p>
+                        Na segunda simulação, a proposta de melhoria é de migrar um atendente de renovação e colocar em segurador novo, já que a fila de renovação estava mais estável e com menos demanda que a Fila
+                        de segurador novo, logo o grupo testou esse caso para ver se alterando essa distribuição de filas, possa ter uma melhoria nos tempos das filas. Os seguintes resultados foram encontrados: <br> <br>
+                        <b>Caso 2 - Migrar um atendente de uma fila para outra com menos demanda </b>      <br>
+                        Fila 1 - Especialista     <br>
+                        Média de chegada por unidade de tempo: 55,1     <br>
+                        Média de atendimento por unidade de tempo: 20     <br>
+                        Número de seguros no período estudado: 1102     <br>
+                        Número de Atendentes: 2      <br>
+                        Resultado: Tempo gasto no sistema (Ws): 4.99     <br>
+                        <br>
+                        Fila 2 - Segurador     <br>
+                        Média de chegada por unidade de tempo: 53,9     <br>
+                        Média de atendimento por unidade de tempo: 16,33     <br>
+                        Número de seguros no período estudado: 1078     <br>
+                        Número de Atendentes: 3      <br>
+                        Resultado: Tempo gasto no sistema (Ws): 2.01     <br>
+                        <br>
+                        Fila 3 - Renovador     <br>
+                        Média de chegada por unidade de tempo: 32     <br>
+                        Média de atendimento por unidade de tempo: 15     <br>
+                        Número de seguros no período estudado: 640     <br>
+                        Número de Atendentes: 1     <br>
+                        Resultado: Tempo gasto no sistema (Ws): 11.00     <br>
+                        <br>
+                        
+                        
+                    </p>
+
+                    <p class="lead">
+                        <b> Terceira simulação: Remover a fila de renovador e adicionar um atendente nas outras filas (Diminuindo a média de atendimento por unidade)</b>
+                     </p>
 
                     <p>
-                        O sistema atual conta com 6 subscritores, dividindo os subscritores em três grupos com 2 subscritores cada:
-                        especialistas, analistas de seguro novo e analistas de renovação, além disso, as cotações podem ser de três tipos:
-                        seguro novo, renovação e endosso, e há 8 produtos: RC Geral, RC Garagista, RC Operações, RC Prestação de Serviços, 
-                        RC Ambiental Transportes, RC Ambiental Locais Fixos, RC Eventos, RC Filmes. As cotações de seguro novo e endosso entram
-                        em todas as filas, já as cotações de renovação vão somente para fila dos analistas de renovação. Em relação aos produtos,
-                        RC Geral, RC operações e RC Prestação de Serviços vão para todas as filas, RC Garagista só vai para fila de um dos especialistas,
-                        RC Ambiental Transportes e Locais Fixos vão para fila de um dos especialistas ou um dos analistas de seguro novo específicos quando
-                        são seguro novo, ou para um dos analistas de renovação quando são renovação, e os RC Filmes e Eventos vão somente para um analista
-                        de seguro novo específico. Além disso, há um número médio de cotações médio a entrar por dia, assim como uma quantidade média que cada
-                        subscritor trata em média por dia. O tempo máximo que uma cotação deve ficar sem tratamento é 5 dias para seguro novo e endossos, e 15
-                        dias para renovação.
-                    </p>
-                    
-                    <p>
-                        O grupo planeja usar Teoria das Filas para fazer essa análise da fila e usar de simulações para avaliar os cenários que encontrarmos com
-                        a ferramenta, entendendo assim como a mudança na distribuição de cotações altera o comportamento das filas.
-                    </p>
+                        Na terceira simulação, a proposta de melhoria é remover a fila de renovador adicionando um atendente em outras filas, dessa forma também, diminuimos a média de atendimento
+                        por unidade de tempo na simulação. Os seguintes resultados foram obtidos: <br> <br>
+                        <b>Caso 3 - Remover a fila de renovador e adicionar um atendente nas outras filas </b>      <br>
+                        Fila Especialista
+                        Média de chegada por unidade de tempo: 72,5 <br>
+                        Média de atendimento por unidade de tempo: 19 <br>
+                        Número de seguros no período estudado: 1450 <br>
+                        Número de Atendentes: 3<br>
+                        Resultado: Tempo gasto no sistema (Ws): 3.22<br>
+                        <br>
+                        Fila Segurador novo<br>
+                        Média de chegada por unidade de tempo: 68,5<br>
+                        Média de atendimento por unidade de tempo: 15.67<br>
+                        Número de seguros no período estudado: 1370<br>
+                        Número de Atendentes: 3<br>
+                        Resultado: Tempo gasto no sistema (Ws): 3.72 <br>
 
+                        
+                        
+                    </p>
+                  
+
+                    <p class="lead">
+                        <b> Quarta simulação: Contratar 2 atendentes e colocar para os casos gerais </b>
+                     </p>
+
+                    <p>
+                        Na quarta simulação, a proposta de melhoria é verificar se a contratação de mais 2 atendentes para os casos gerais balancearia os tempos de esperas das filas. Os seguintes resultados foram obtidos: <br> <br>
+                        <b>Caso 4 - Contratação de novos atendentes </b>      <br>
+                        Fila 1 - Renovador <br>
+                        Média de chegada por unidade de tempo: 22 <br>
+                        Média de atendimento por unidade de tempo: 15  <br>
+                        Número de seguros no período estudado: 440 <br>
+                        Número de Atendentes: 2<br>
+                         Tempo gasto no sistema (Ws): 0.19 <br>
+                        <br>
+                        Fila 2 - Especialista<br>
+                        Média de chegada por unidade de tempo: 22<br>
+                        Média de atendimento por unidade de tempo: 15 <br>
+                        Número de seguros no período estudado: 440 <br>
+                        Número de Atendentes: 2<br>
+                        Resultado:  Tempo gasto no sistema (Ws): 1.57 <br>
+                        <br>
+                        Fila 3 - Segurador<br>
+                        Média de chegada por unidade de tempo: 39,6<br>
+                        Média de atendimento por unidade de tempo: 17 <br>
+                        Número de seguros no período estudado: 792<br>
+                        Número de Atendentes: 2<br>
+                        Resultado: Tempo gasto no sistema (Ws): 2.29 <br>
+                        <br>
+                        Fila 4 - Novos Colaboradores<br>
+                        Média de chegada por unidade de tempo: 36,6<br>
+                        Média de atendimento por unidade de tempo: 15<br>
+                        Número de seguros no período estudado: 732<br>
+                        Número de Atendentes: 2 <br>
+                        Tempo gasto no sistema (Ws): 2.78<br>
+
+                        
+                        
+                    </p>
                 </div>
             </div>
     
@@ -548,6 +659,45 @@
     </section> <!-- end s-services -->
 
 
+    <section id="documentacao" class="s-about target-section">
+
+        <div class="about-me">
+
+            <div class="row heading-block" data-aos="fade-up">
+                <div class="column large-full">
+                    <h2 class="section-heading">Documentação</h2>
+                </div>
+            </div>
+
+            <div class="row about-me__content" data-aos="fade-up">
+                <div class="column large-full about-me__text">
+                    <p class="lead">
+                        Abaixo a documentação dos dados encontrados no programa em python.
+                    </p>
+
+                    <div class="row about-me__buttons">
+                        <div class="column large-half tab-full" data-aos="fade-up">
+                            <a href="anexos/Casos.pptx" class="btn btn--stroke full-width">Resultados e melhorias (.pptx)</a>
+                        </div>
+                        <div class="column large-half tab-full" data-aos="fade-up">
+                            <a  href="anexos/POA - Simulações.docx" class="btn btn--stroke full-width">Simulações das filas (.docx)</a>
+                        </div>
+                        <div class="column large-half tab-full" data-aos="fade-up">
+                            <a target="_blank" href="https://colab.research.google.com/drive/1r6PeaR95GKyMX67l_Bg8VSYtOcjYUwQm" class="btn btn--stroke full-width">Programa das simulações (.ipynb)</a>
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+            </div>
+    
+    
+
+
+        </div> <!-- end about-me -->
+
+    </section> <!-- end s-about -->
 
 
     <section id="works" class="s-works target-section">
